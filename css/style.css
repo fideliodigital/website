@@ -402,7 +402,7 @@ fieldset[disabled] .s-btn {
   border-right: none;
   box-shadow: none;
   letter-spacing: .1rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: .625rem 2.5rem;
 }
 
@@ -437,7 +437,7 @@ fieldset[disabled] .s-btn {
   border: none;
   box-shadow: none;
   letter-spacing: .1rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: .625rem 1.25rem;
   transition-duration: 300ms;
   transition-property: all;
@@ -498,7 +498,7 @@ fieldset[disabled] .s-btn {
   box-shadow: none;
   border-radius: 0;
   letter-spacing: .1rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: 0 1.25rem 0 0;
   transition-duration: 300ms;
   transition-property: all;
@@ -557,7 +557,7 @@ fieldset[disabled] .s-btn {
   box-shadow: none;
   border-radius: 0;
   letter-spacing: .1rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: 0 1.25rem .3125rem 1rem;
   transition-duration: 300ms;
   transition-property: all;
@@ -620,7 +620,7 @@ fieldset[disabled] .s-btn {
   border-right: none;
   box-shadow: none;
   letter-spacing: .1rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: .625rem 2.5rem;
 }
 
@@ -1468,7 +1468,7 @@ fieldset[disabled] .s-btn {
   position: relative;
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.4);
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: .3125rem;
 }
 
@@ -1905,7 +1905,7 @@ fieldset[disabled] .s-btn {
   font-family: Montserrat, sans-serif;
   color: rgba(255, 255, 255, 0.75);
   line-height: 5.5rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin: 0 .9rem;
   transition-duration: 300ms;
   transition-property: all;
@@ -2110,7 +2110,7 @@ fieldset[disabled] .s-btn {
 .s-portfolio__filter-v1-item {
   font-size: 0.8125rem;
   color: #656565 !important;
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin-bottom: 0 !important;
 }
 
