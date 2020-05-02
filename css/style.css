@@ -98,7 +98,7 @@ h6 {
 em,
 li {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #242424;
 }
 
@@ -130,7 +130,7 @@ i {
 /* Paragraph */
 p {
   font-size: 0.9375rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #656565;
   line-height: 1.6;
   margin-top: 0;
@@ -1155,6 +1155,7 @@ fieldset[disabled] .s-btn {
 .container-fluid {
   padding-left: 2.1875rem;
   padding-right: 2.1875rem;
+  margin-bottom: 15px;
 }
 
 /* Navbar Row
@@ -1388,7 +1389,7 @@ fieldset[disabled] .s-btn {
 .s-header__nav-menu-link {
   display: inline-block;
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   opacity: .85;
   padding: .3125rem;
@@ -2374,3 +2375,17 @@ fieldset[disabled] .s-btn {
 .s-swiper__pagination-v1--dark .swiper-pagination-bullet-active {
   background: #137bbd;
 }
+
+/* Contenido de la entrada de blog 
+p,em,li #contenido {
+  font-size: 1rem;
+  font-weight: 400 !important;
+  color: #242424;
+}
+h1,h2,h3,h4,h5 #contenido {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+*/
