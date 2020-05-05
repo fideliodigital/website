@@ -107,29 +107,29 @@
                 <div class="g-text-center--xs g-margin-t-50--xs g-margin-b-80--xs">
                     <h2 class="g-font-size-32--xs g-font-size-36--sm g-color--dark">Hola FIDELIO</h2>
                 </div>
-                <form class="center-block g-width-500--sm g-width-550--md">
+                <form  onsubmit="return false" class="center-block g-width-500--sm g-width-550--md">
                     <div class="g-margin-b-30--xs">
                         <label for="name" class="g-color--dark">Mi nombre es</label><br>
-                        <input type="text" class="form-control s-form-v4__input" placeholder="Tu nombre">
+                        <input type="text" class="form-control s-form-v4__input" placeholder="Tu nombre" id="nombre">
                     </div>
                     <div class="g-margin-b-30--xs">
                         <label for="phone">Mi celular es</label><br>
-                        <input type="phone" class="form-control s-form-v4__input" placeholder="Tu número de celular">
+                        <input type="phone" class="form-control s-form-v4__input" placeholder="Tu número de celular" id="celular">
                     </div>
                     <div class="g-margin-b-30--xs">
                         <label for="work">Trabajo en</label><br>
-                        <input type="text" class="form-control s-form-v4__input" placeholder="Tu empresa">
+                        <input type="text" class="form-control s-form-v4__input" placeholder="Tu empresa" id="empresa">
                     </div>
                     <div class="g-margin-b-30--xs">
                         <label for="work">Contáctenme en</label><br>
-                        <input type="email" class="form-control s-form-v4__input" placeholder="Tu @email.com">
+                        <input type="email" class="form-control s-form-v4__input" placeholder="Tu @email.com" id="correo">
                     </div>
                     <div class="g-margin-b-30--xs">
                         <label for="work">Mensaje</label><br>
-                        <input type="email" class="form-control s-form-v4__input" placeholder="Tu mensaje aquí">
+                        <input type="text" class="form-control s-form-v4__input" placeholder="Tu mensaje aquí" id="mensaje">
                     </div>
                     <div class="g-text-center--xs">
-                        <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--dark-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Enviar</button>
+                        <button type="submit" onclick="enviarForm()" type="submit"  class="text-uppercase s-btn s-btn--md s-btn--dark-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Enviar</button>
                     </div>
                     <br><br>
                 </form>
@@ -168,7 +168,49 @@
         </div>
         <!-- End Feedback Form -->
         <!--========== END PAGE CONTENT ==========-->
+        <script>
+            
+/**
+ * Enviar formulario de contacto y mostrar respuesta
+ */
+function enviarForm()
+{
 
+   
+        var nombre = $("#nombre").val(),
+            celular = $("#celular").val();
+            correo = $("#correo").val();
+            empresa = $("#empresa").val();
+            mensaje = $("#mensaje").val();
+
+            if (!nombre) //la función se llama sola al cargar la página con campos vacios
+                return;
+
+        $.ajax({
+            type: "POST",
+            url: 'https://ky0weuz3m5.execute-api.us-east-1.amazonaws.com/production',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                'nombre': nombre,
+                'celular': celular,
+                'correo': correo,
+                'empresa': empresa,
+                'mensaje': mensaje,
+            }),
+            success: function(res)
+            {
+                alert("Mensaje enviado con éxito")
+            },
+            error: function(res)
+            {
+                alert("Lo lamentamos mucho. Ha ocurrido un error");
+                console.log(res);
+            }
+        });
+        return;
+
+}
+        </script>
         <!--========== FOOTER ==========-->
         <footer class="g-bg-color--dark">
             <!-- Copyright -->
