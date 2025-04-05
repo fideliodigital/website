@@ -2476,16 +2476,126 @@ fieldset[disabled] .s-btn {
   background: #137bbd;
 }
 
-/* Contenido de la entrada de blog 
-p,em,li #contenido {
-  font-size: 1rem;
-  font-weight: 400 !important;
-  color: #242424;
+/*----------------------------------
+  Responsive Design Fixes
+------------------------------------*/
+@media (max-width: 768px) {
+  /* General fixes */
+  .g-fullheight--xs {
+    height: 100vh;
+  }
+
+  /* Fix for header menu on mobile */
+  .s-header__nav-menu-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Improved header spacing */
+  .s-header__logo {
+    max-width: 80%;
+  }
+
+  /* Better image handling */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Contact form mobile optimization */
+  form.center-block {
+    width: 100% !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Fix for contact section columns */
+  .col-xs-4.g-full-width--xs {
+    margin-bottom: 30px !important;
+  }
+
+  /* Improve mobile padding */
+  .g-padding-y-125--xs {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  /* Make buttons more touch-friendly */
+  .s-btn {
+    padding: 10px 20px;
+    display: inline-block;
+    width: auto;
+  }
+
+  /* Better footer layout */
+  footer .col-xs-6 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer .g-padding-y-50--xs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  /* Fix the manifesto section */
+  .g-promo-section__img-right--lg {
+    height: 300px;
+    position: relative;
+    width: 100%;
+  }
 }
-h1,h2,h3,h4,h5 #contenido {
-  font-size: 28px;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+
+/* Additional fixes for very small screens */
+@media (max-width: 480px) {
+  .g-promo-section__img-right--lg {
+    height: 200px;
+  }
+
+  .g-font-size-40--xs {
+    font-size: 28px !important;
+  }
+
+  .g-font-size-50--sm, .g-font-size-60--md {
+    font-size: 32px !important;
+  }
 }
-*/
+
+/* Additional responsive fixes for blog pages */
+@media (max-width: 768px) {
+  /* Improve blog content readability on mobile */
+  .blog-content p, 
+  .blog-content li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .blog-content h1, 
+  .blog-content h2, 
+  .blog-content h3 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  /* Ensure content is properly padded */
+  .g-container--sm, 
+  .g-container--md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Better spacing for manifesto section */
+  .g-promo-section .col-md-5 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
