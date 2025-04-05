@@ -8,7 +8,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "combine-js": "node js/combine.js"
+    "combine-js": "node js/combine.js",
+    "build": "npm run clean && tsc && npm run minify",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist/*",
+    "minify": "node create-minified-files.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,12 @@
   },
   "homepage": "https://github.com/fideliodigital/website#readme",
   "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/jquery": "^3.5.29",
+    "@types/node": "^20.11.19",
+    "@types/uglify-js": "^3.17.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
     "uglify-js": "^3.17.4"
   }
 }
