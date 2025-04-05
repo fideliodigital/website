@@ -1,0 +1,27 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Official website for Fidelio Digital, a digital transformation consultancy that helps businesses solve problems in operations, marketing, software development, and process optimization.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "combine-js": "node js/combine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fideliodigital/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fideliodigital/website/issues"
+  },
+  "homepage": "https://github.com/fideliodigital/website#readme",
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}

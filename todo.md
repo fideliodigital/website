@@ -9,7 +9,7 @@
 - [ ] Lazy load images below the fold
 
 ### 1.2 JavaScript Optimization
-- [ ] Minify and combine JavaScript files
+- [x] Minify and combine JavaScript files
 - [ ] Defer non-critical JavaScript
 - [ ] Replace jQuery with modern vanilla JavaScript where possible
 - [x] Convert the main.js to use modern ES6+ syntax

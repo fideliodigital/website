@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 desktop.ini
+node_modules
+dist
+
