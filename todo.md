@@ -12,7 +12,7 @@
 - [ ] Minify and combine JavaScript files
 - [ ] Defer non-critical JavaScript
 - [ ] Replace jQuery with modern vanilla JavaScript where possible
-- [ ] Convert the main.js to use modern ES6+ syntax
+- [x] Convert the main.js to use modern ES6+ syntax
 - [ ] Implement code splitting for different pages
 
 ### 1.3 CSS Optimization
