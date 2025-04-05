@@ -4,5 +4,6 @@
 .Ruserdata
 desktop.ini
 node_modules
-dist
+# We need the dist directory for GitHub Pages
+# dist
 
