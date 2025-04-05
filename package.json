@@ -9,9 +9,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "combine-js": "node js/combine.js",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc && npm run minify",
     "watch": "tsc --watch",
-    "clean": "rm -rf dist/*"
+    "clean": "rm -rf dist/*",
+    "minify": "node create-minified-files.js"
   },
   "repository": {
     "type": "git",
