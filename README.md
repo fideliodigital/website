@@ -22,6 +22,35 @@ This website is built with:
 - Various vendor libraries (Swiper, Scrollbar, Themify, etc.)
 - Google Analytics
 
+## TypeScript Migration
+
+This project has been migrated from JavaScript to TypeScript. The TypeScript source files are located in the `src` directory, and the compiled JavaScript files are output to the `dist/js` directory.
+
+### Development
+
+To modify the TypeScript files:
+
+1. Make changes to the TypeScript files in the `src` directory
+2. Run `npm run build` to compile the TypeScript files to JavaScript
+3. The compiled JavaScript files will be output to the `dist/js` directory
+
+The HTML files have been updated to reference the compiled JavaScript files in the `dist/js` directory.
+
+### Project Structure
+
+- `src/` - TypeScript source files
+  - `components/` - TypeScript component files
+- `dist/` - Compiled JavaScript files
+  - `js/` - Compiled JavaScript files
+    - `components/` - Compiled JavaScript component files 
+- `js/` - Original JavaScript files (deprecated)
+  - `components/` - Original JavaScript component files (deprecated)
+
+### Scripts
+
+- `npm run build` - Compile TypeScript files to JavaScript
+- `npm run watch` - Watch TypeScript files and compile on changes
+
 ## Setup and Development
 
 To set up this project locally:

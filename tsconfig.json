@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "./dist/js",
+    "rootDir": "./src",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["dom", "es6", "dom.iterable", "scripthost"],
+    "sourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "noEmitOnError": false,
+    "allowJs": true,
+    "checkJs": false,
+    "ignoreDeprecations": "5.0",
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+} 
